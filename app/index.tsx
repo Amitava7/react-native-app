@@ -38,7 +38,12 @@ export default function Index() {
         <Dropdown
           style={styles.dropdown}
           placeholderStyle={styles.dropdownText}
-          selectedTextStyle={styles.dropdownText}
+          containerStyle={{ backgroundColor: '#2A1A1A' }}
+          itemTextStyle={{ color: '#fff', backgroundColor: '#2A1A1A' }}
+          selectedTextStyle={{ color: '#fff', backgroundColor: '#2A1A1A', padding: 0 }}
+
+          inputSearchStyle={{ backgroundColor: '#2A1A1A' }}
+          itemContainerStyle={{ borderColor: 'blue', padding: 0 }}
           data={dropdownItems}
           labelField="label"
           valueField="value"
@@ -93,6 +98,8 @@ const styles = StyleSheet.create({
   dropdownText: {
     color: '#fff',
     fontSize: 16,
+    backgroundColor: '#2A1A1A',
+    borderColor: '#5C3F3F',
   },
   addButton: {
     marginTop: 16,
